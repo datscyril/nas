@@ -1,0 +1,15 @@
+tests/test.yml
+site
+.vagrant
+*.retry
+*.log
+.cache
+
+# Vim
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# IntelliJ
+/.idea/

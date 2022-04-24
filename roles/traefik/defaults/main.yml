@@ -19,7 +19,7 @@ traefik_log_level: 'INFO'
 traefik_dns_provider: cloudflare
 traefik_environment_variables:
   CF_API_EMAIL: 'ghlcyril@gmail.com'
-  CF_API_KEY: {{ cloudflare_api_key }}
+  CF_API_KEY: '{{ cloudflare_api_key }}'
 
 # find the relevant name and environment variables for your DNS provider at https://go-acme.github.io/lego/dns/
 
