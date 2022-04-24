@@ -1,0 +1,23 @@
+---
+- name: Create ansible-nas group
+  group:
+    name: nasa
+    gid: 1013
+    state: present
+
+- name: Create ansible-nas user
+  user:
+    name: nasa
+    state: present
+    system: yes
+    update_password: on_create
+    create_home: no
+    group: nasa
+    uid: 1013
+    shell: /usr/sbin/nologin
+
+- name: Update Luffy group
+  user:
+    name: luffy
+    groups: nasa
+    append: yes

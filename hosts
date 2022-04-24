@@ -1,0 +1,2 @@
+[home]
+homeserver ansible_host=192.168.0.39 ansible_user=luffy ansible_connection=ssh ansible_ssh_private_key_file=/Users/cyrilghali/.ssh/id_rsa
